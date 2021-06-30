@@ -1,20 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    <div class="logo">
+        <img src="../../assets/img/logo-removebg-preview.png" alt="logo">
+    </div>
+    <div class="hrPosition">
+      <hr class="hrColor">
+      <h5 class="loginTitle">CONNEXION</h5>
+      <hr class="hrColor">
+    </div>
+    <form class="ion-padding">
+      <h6 class="title_input">Adresse email</h6>
+      <div class="wrap-input">
+        <input class="input" type="text" name="user-email" placeholder="Adresse email">
+      </div>
+      <h6 class="title_input">Mot de passe</h6>
+      <div class="wrap-input">
+        <input class="input" type="password" name="password" placeholder="Mot de passe">
+      </div>
+    </form>
+    <div class="container-form-btn">
+      <button class="form-btn custom-font">
+        SE CONNECTER
+      </button>
+    </div>
+    <div class="flex">
+      <h6 class="footerElement">vous n'êtes pas inscrit ?</h6>
+      <h6><a [routerLink]="['/register']" class="hrefElement">Inscrivez-vous</a></h6>
+    </div>
   </div>
+
 </ion-content>

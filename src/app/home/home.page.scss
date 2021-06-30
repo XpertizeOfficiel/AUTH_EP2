@@ -1,27 +1,146 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+*{
+  font-family: Roboto, sans-serif;
+}
+.custom-font {
+  color:black;
+}
+.flex{
+  display:flex;
+  justify-content:space-evenly;
+  padding-top: 1.5em;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-toolbar {
+  --background: transparent;
+
+  ion-title {
+    padding: 20px 0 46px 0;
+    font-weight: 900;
+  }
+
+  p {
+    padding: 40px 0 20px 0;
+    font-weight: 600;
+  }
+  .back-circle {
+    z-index: -1;
+    width: 250px;
+    height: 200px;
+    background: #e5ecf1;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-content {
+    --overflow:hidden;
+    overflow: auto;
+    --background: none;
+    //background: url(../../assets/img/bridal_2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  color: #8c8c8c;
+  .back-blob {
+    z-index: -1;
+    width: 600px;
+    position: absolute;
+    left: -50%;
+    top: 0;
+  }
 
-  margin: 0;
-}
+  .title_input{
+  margin-right:3em;
+  margin-bottom:0.4em;
+  }
 
-#container a {
-  text-decoration: none;
+  form {
+    margin-top: -1.9;
+  }
+  .wrap-input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    //box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.12);
+    border:0.5px rgb(190, 190, 190) solid;
+  }
+  .input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    height: 46px;
+    padding: 0 20px 0 23px;
+  }
+  .container-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hrPosition{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hrColor{
+    width: 20%;
+    background: #f7b03a;
+    font-size: large;
+    margin-top:1.5em;
+  }
+
+  .loginTitle{
+    color:black;
+    font-weight:bold;
+  }
+
+  .hrefElement{
+    margin-right: 1em;
+    color:#f7b03a;
+    text-decoration: none;
+  }
+
+  .footerElement{
+    font-size: 15px;
+    color:black;
+  }
+
+  .logo{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 300px;
+    height: 48px;
+    background-color: #1c773d;
+    //background: linear-gradient(90deg, #f7b03a 0%, #413f3f 200%);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 5px;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.5);
+  }
+  .form-btn:hover {
+    background-color: #28333b;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+  }
+
 }
